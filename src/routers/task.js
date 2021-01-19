@@ -8,7 +8,7 @@ const router = new express.Router();
 router.post('/tasks', auth, async (req, res) => {
     /*  Video 114: The User/Task Relationship
         - Commented out the original const task line because new one was made.
-        - Instead of specifiying request.body, we're going to provide our own object under the new task.
+        - Instead of specifying request.body, we're going to provide our own object under the new task.
         - We're going to provide all of the stuff from req.body with the addition of an owner property.
         - Using the ES6 operator ... with req.body, it's going to copy all of the properties from body over to this object.
         - The owner is not something that should be specified via the request. There's no need to pass the owner ID along with the data you send as part of the request body as it is all from the authentication token. So, we'll hardcode it as owner: req.user._id
@@ -61,7 +61,7 @@ router.get('/tasks', auth, async (req, res) => {
     const sort = {}
 
     if (req.query.completed) {
-        //Paranthesis isn't necessary, but it makes it easier to read and understand.
+        //Parenthesis isn't necessary, but it makes it easier to read and understand.
         match.completed = (req.query.completed === 'true');
     }
 

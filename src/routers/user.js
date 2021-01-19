@@ -128,7 +128,7 @@ router.patch('/users/me', auth, async (req, res) => {
     try {
         //Replace this line below to take advantage of middleware.
         //const user = await User.findByIdAndUpdate(req.params.id, req.body, { new: true, runValidators: true });
-        //The findByIdAndUpdate method bypasses Mongoose. It performs a direect operation on the database.
+        //The findByIdAndUpdate method bypasses Mongoose. It performs a direct operation on the database.
         // const user = await User.findById(req.params.id); //Video 113: No longer need this since we changed the route to '/users/me'
         updates.forEach((update) => {
             //Use bracket notation to access a property dynamically.

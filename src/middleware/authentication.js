@@ -1,7 +1,7 @@
 /*  Video 108: Express Middleware
     Without middleware: new request -> run route handler
     With middleware:    new request -> do something -> run route handler
-    - When creating middleware throughout the apop, it's best to define it in a separate file.
+    - When creating middleware throughout the app, it's best to define it in a separate file.
     - This 'something' is nothing more than a function that runs and we can set up this function to do whatever we want. Maybe log some statistics about the request so we can keep track of it in our server log or maybe check if there's a valid authentication token. Then we run the regular route handler or not, like if the user is not authenticated.
     - This needs to be located above our app.use() calls.
     - The 'next' argument is the thing that's specific to registering middleware. We must call next() in order for Express to know that we're done with the middleware function and that it should continue.

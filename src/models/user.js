@@ -151,9 +151,9 @@ userSchema.statics.findByCredentials = async (email, password) => {
     - Rounds are how many times the hashing algorithm is executed.
     -- If we use too few rounds, it makes it easier to hack. If we use too many, it takes too long and our application becomes useless. We'll use 8.
     - The hashed password is what we'll store in the database.
-    - With using encrpytion algorithms, we can get the original password back.
+    - With using encryption algorithms, we can get the original password back.
     - When using hashing algorithms, we cannot get the original password back.
-    - To see if the original password matches the hashed password, we use bcrypt.compre() which takes two arguments.
+    - To see if the original password matches the hashed password, we use bcrypt.compare() which takes two arguments.
     -- The first is the plain text password. The second is the hashed password.
     -- It will come back as a boolean.
     - To set up the middleware, we're going to use a method on userSchema
