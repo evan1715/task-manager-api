@@ -15,20 +15,20 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@sendgrid/mail": "^7.4.0",
+    "@sendgrid/mail": "^7.4.6",
     "bcryptjs": "^2.4.3",
     "express": "^4.17.1",
     "jsonwebtoken": "^8.5.1",
     "mongodb": "^3.6.3",
     "mongoose": "^5.11.5",
-    "multer": "^1.4.2",
-    "sharp": "^0.26.3",
-    "validator": "^13.5.1"
+    "multer": "^1.4.3",
+    "sharp": "^0.29.0",
+    "validator": "^13.6.0"
   },
   "devDependencies": {
     "env-cmd": "^10.1.0",
-    "jest": "^26.6.3",
-    "nodemon": "^2.0.6",
-    "supertest": "^6.0.1"
+    "jest": "^27.1.0",
+    "nodemon": "^2.0.12",
+    "supertest": "^6.1.6"
   }
 }
