@@ -1,3 +1,2 @@
 # task-manager-api
-
-This was a project done while learning through a Udemy course.
+The Task Manager app is an API-only app. Meaning that when you go to the deployment website, it won't go to an actual website because there is no front-end. To access the API, you use Postman or something similar to access the NodeJS API. The app features NodeJS with Express, active connection to MongoDB using Mongoose, and even authentication with hashed passwords. The active login token is stored in the database. The idea is you create an account, add tasks, and see what you need to do. Sort of like a to-do list. A user can create a user, login, logout, logout of all locations, read their profile, user, tasks, delete user or tasks, upload avatar, or update existing user info or task info.
