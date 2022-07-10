@@ -18,12 +18,12 @@ const mongoose = require('mongoose');
 
 mongoose.connect(process.env.MONGODB_URL, {
     useNewUrlParser: true,
-    useCreateIndex: true,
+    // useCreateIndex: true,
     /* To prevent deprecation warning of :
     (node:18748) DeprecationWarning: Mongoose: `findOneAndUpdate()` and `findOneAndDelete()` without the `useFindAndModify` option set to false are deprecated. 
     See: https://mongoosejs.com/docs/deprecations.html#findandmodify 
     We're going to use useFindAndModify: false */
-    useFindAndModify: false,
+    // useFindAndModify: false,
     /* To prevent deprecation warning of:
     (node:6748) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. 
     To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.

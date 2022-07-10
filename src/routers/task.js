@@ -145,13 +145,14 @@ router.delete('/tasks/:id', auth, async (req, res) => {
     try {
         //Video 115: Authenticating Task Endpoints - changed the task variable.
         //const task = await Task.findByIdAndDelete(req.params.id);
-        const task = await Task.findOneAndDelete({ _id: req.params.id, owner: req.user._id });
+        // const task = await Task.findOneAndDelete({ _id: req.params.id, owner: req.user._id });
 
-        if (!task) {
-            return res.status(404).send();
-        }
 
-        res.send(task);
+        // if (!task) {
+        //     return res.status(404).send();
+        // }
+        await req.task.remove();
+        res.send(req.task);
     } catch (error) {
         res.status(500).send();
     }
